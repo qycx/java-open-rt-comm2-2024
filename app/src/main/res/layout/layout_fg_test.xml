@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        
+    <TextView
+        android:id="@+id/tfcCameraParams_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="CameraParams" />
+
+    <TextView
+        android:id="@+id/tfcRectSize_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tfcCameraParams_text"
+        android:text="RectSize" />
+
+    <TextView
+        android:id="@+id/tfcZoomArea_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tfcRectSize_text"
+        android:text="ZoomArea" />
+
+
+    <TextView
+        android:id="@+id/tfcZoomLabel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tfcZoom_seekbar"
+        android:text="ZoomLabel" />
+
+    <SeekBar
+        android:id="@+id/tfcZoom_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tfcRotateLabel_text"
+        android:layout_below="@+id/tfcZoomArea_text" />
+
+    <TextView
+        android:id="@+id/tfcSizeLabel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tfcSize_seekbar"
+        android:text="SizeLabel" />
+
+    <SeekBar
+        android:id="@+id/tfcSize_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tfcRotateLabel_text"
+        android:layout_below="@+id/tfcZoom_seekbar" />
+
+    <TextView
+        android:id="@+id/tfcRotateLabel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tfcRotate_seekbar"
+        android:text="RotateLabel" />
+
+    <SeekBar
+        android:id="@+id/tfcRotate_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tfcRotateLabel_text"
+        android:layout_below="@+id/tfcSize_seekbar" />
+
+
+    <com.qycx.MyTextureView
+        android:id="@+id/texture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tfcRotate_seekbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/texture"
+        android:background="#4285f4">
+        <Button
+            android:id="@+id/btn_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/request" />
+        <Button
+            android:id="@+id/btn_av"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:text="@string/av" />
+
+
+    </FrameLayout>
+
+</RelativeLayout>

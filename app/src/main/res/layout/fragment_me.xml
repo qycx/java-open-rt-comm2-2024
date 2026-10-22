@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".Fragment_me">
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_topbar">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="qyMessenger"
+            android:textColor="@color/text_topbar"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/txt_topMenu"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/text_topbar"
+            android:textSize="28sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/div_white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_top_bar"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#f5f5f5"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:text="账号信息"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:paddingLeft="28dp">
+
+                <TextView
+                    android:id="@+id/a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:text="用户名称:"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/usrName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:layout_toRightOf="@id/a"
+                    android:text="双双"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/c"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/usrName"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:text="ID号:"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/idInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/usrName"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:layout_toRightOf="@id/c"
+                    android:text="1047"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idInfo"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:text="网络速率"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/io"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idInfo"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:layout_toRightOf="@id/e"
+                    android:text="0.0M 0.0M"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#f5f5f5"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:text="服务器配置"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:paddingLeft="28dp">
+
+                <TextView
+                    android:id="@+id/g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:text="服务器:"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/server"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:layout_toRightOf="@id/g"
+                    android:text="218.24.128.210:8766"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/i"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/server"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:text="状态服务器:"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_statusServer"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/server"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:layout_toRightOf="@id/i"
+                    android:background="@drawable/edit_style_text"
+                    android:digits="0123456789."
+                    android:inputType="number"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/btn_apply"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/server"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:layout_toRightOf="@id/edt_statusServer"
+                    android:background="#0083ff"
+                    android:gravity="center"
+                    android:text="应用"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/statusQInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_apply"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:text="192.168.100.193 connected 0:"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#f5f5f5"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:text="密码重置"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:paddingLeft="28dp">
+
+                <TextView
+                    android:id="@+id/m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:text="请输入密码:"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/pw_edit"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:background="@drawable/edit_style_text"
+                    android:inputType="textVisiblePassword"
+                    android:text=""
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/change_password"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:background="#0083ff"
+                    android:gravity="center"
+                    android:text="应用"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#f5f5f5"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:text="其他信息"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:paddingLeft="28dp">
+
+                <TextView
+                    android:id="@+id/p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:text="版本号:"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/ver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:layout_toRightOf="@id/p"
+                    android:text="V2.66.7.38 Debug"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/p"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:text="支持网站:"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/p"
+                    android:layout_marginTop="@dimen/me_base_info_margin"
+                    android:layout_toRightOf="@id/r"
+                    android:text="www.qycx.com"
+                    android:textColor="#777777"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

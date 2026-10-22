@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+	<style name="horizontal_line_style">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">1px</item>
+		<item name="android:background">@color/horizontal_line_gray_800</item>
+	</style>
+
+	<style name="vertical_line_style">
+		<item name="android:layout_width">1px</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:background">@color/vertical_line_gray_800</item>
+	</style>
+</resources>

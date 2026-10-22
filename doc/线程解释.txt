@@ -1,0 +1,28 @@
+mcThreadProc_mis_mgr            控制线程
+mcThreadProc_mis_media          视频中转线程
+mcThreadProc_mis_realTimeMedia  音频中转线程
+mcThreadProc_mis_robot          文件传输线程
+
+mcThreadProc_mis_snd       网络发送线程
+ThreadProc_mis_io          网络读取线程
+mcThreadProc_mis_toSend    发送前处理线程
+mcThreadProc_mis_work      空转（消息内容处理）
+mcThreadProc_mis_scheduler 用户信息维护线程
+
+decObj_a_mediaCodec_Wrapper     音频解码器内部线程
+mcThreadProc_decAudio           自定解码器线程
+mcThreadProc_playAudio          播放线程
+
+mcThreadProc_toShareAudio   音频编码线程
+recThreadFunc_android       录音线程
+
+decObj_mediaCodec_Wrapper   视频解码器内部线程
+mcThreadProc_decVideo       自定解码器线程
+dlgTalk_av_Renderer         视频渲染线程
+
+camera_RenderThread             视频采集线程
+encObj_mediaCodec_Wrapper       视频编码器内部线程
+mcThreadProc_toShareVideo_post  视频编码后处理线程
+
+mcThreadProc_isCli  总后台线程
+showInfoThreadProc  日志线程

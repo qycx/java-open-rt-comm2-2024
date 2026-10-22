@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/fragment_top_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/fragment_bottom_margin"
+    tools:context=".Fragment_dlgTalk_msgList">
+
+
+
+    <RelativeLayout
+        android:id="@+id/topMenu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/txt_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:textColor="@color/text_topbar"
+            android:text="&lt;"/>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/text_topbar"
+            android:text="qyMessenger"/>
+
+
+        <TextView
+            android:id="@+id/txt_more"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="..."
+            android:textColor="@color/text_topbar"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/div_topMenu"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/div_white" />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topMenu"
+        android:layout_above="@+id/div_bottomMenu">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <View
+        android:id="@+id/div_bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/bottomMenu"
+        android:background="@color/div_white" />
+
+
+    <RelativeLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:id="@+id/inputLine"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp">
+
+                <EditText
+                    android:id="@+id/editText_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/input_bg"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/button_snd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/green"
+                android:text="发送" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/inputLine"
+            >
+
+            <Button
+                android:id="@+id/btn_av_hd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/green"
+                android:text="视频通话" />
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btn_av"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/green"
+                android:text="视频通话480P" />
+
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/btn_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/green"
+                android:text="文件" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+

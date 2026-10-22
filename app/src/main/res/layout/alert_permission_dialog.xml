@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+
+    <TextView
+        android:layout_marginTop="32dp"
+        android:id="@+id/tv_alert_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/permission_title"
+        android:textColor="@color/permission_title_color"
+        android:textSize="22sp" />
+
+    <TextView
+        android:padding="2dp"
+        android:id="@+id/tv_alert_dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="@string/permission_content_storage"
+        android:textColor="@color/permission_content_color"
+        android:textSize="22sp" />
+
+    <View style="@style/horizontal_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/alert_dialog_storage_cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/storage_cancel_content"
+            android:textColor="@color/alert_dialog_storage_cancel_color"
+            android:textSize="22sp" />
+        <View style="@style/vertical_line_style" />
+        <TextView
+            android:id="@+id/alert_dialog_storage_setting"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/storage_setting_content"
+            android:textColor="@color/alert_dialog_storage_setting_color"
+            android:textSize="22sp" />
+    </LinearLayout>
+</LinearLayout>

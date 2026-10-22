@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="picture">Picture</string>
+    <string name="request">Request</string>
+    <string name="av">AV</string>
+    <string name="more">更多</string>
+    <string name="nvr_channel_name">请选择通道</string>
+
+
+    <string name="request_permission">This app needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="app_name">清扬通信New</string>
+
+    <string name="permission_title">权限申请</string>
+    <string name="permission_content_storage_first">清扬通信 需要申请存储权限</string>
+    <string name="permission_content_storage">在设置-应用-清扬通讯-权限中开启存储空间权限，以正常使用文件发送能力。</string>
+
+    <string name="permission_content_camera_mic">清扬通信 需要申请相机权限、录音权限</string>
+    <string name="permission_content_camera">在设置-应用-清扬通讯-权限中开启相机权限，以正常使用视频通话功能。</string>
+    <string name="permission_content_mic">在设置-应用-清扬通讯-权限中开启麦克风权限，以正常使用语音话功能。</string>
+    <string name="permission_write_setting">在设置-应用-清扬通讯-权限中开启修改系统设置权限，以正常使用新消息通知功能。</string>
+
+    <string name="storage_setting_content">去设置</string>
+    <string name="storage_cancel_content">取消</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="CONST_resId_anotherLogonExists">在另一处登录</string>
+    <string name="CONST_resId_anotherLogon">另一处登录</string>
+    <string name="CONST_resId_appName">清扬视频通信</string>
+    //
+    <string name="CONST_resId_allImObjectsRetrieved">所有用户信息已下载</string>
+    <string name="CONST_resId_imObjListRetrieved">用户信息已下载</string>
+    //
+    <string name="CONST_resId_staticUsrName">名称:</string>
+    <string name="CONST_resId_staticServer">服务器:</string>
+    <string name="CONST_resId_staticStatusServer">状态服务器:</string>
+    <string name="CONST_resId_apply">应用</string>
+    <string name="CONST_resId_staticCreatorIdInfo">创建者:</string>
+    <string name="CONST_resId_cancel_AV">退出会议</string>
+    <string name="CONST_resId_requestToSpeak">发言</string>
+    <string name="CONST_resId_stopSpeaking">停止发言</string>
+    <string name="CONST_resId_changeCamera">切换镜头</string>
+    <string name="CONST_resId_localVideo">本地视频</string>
+    <string name="CONST_resId_yes">是</string>
+    <string name="CONST_resId_waitToQuit">等待退出...</string>
+    <string name="CONST_resId_progress">进度条</string>
+    <string name="CONST_resId_tooManySpeaks">发言人数已到上限</string>
+    <string name="CONST_resId_cantTalkToMySelf">不能和自己对话</string>
+    <string name="CONST_resId_accept">接听</string>
+    <string name="CONST_resId_cancel">取消</string>
+    <string name="CONST_resId_releaseToVideo">松开传视频</string>
+</resources>
